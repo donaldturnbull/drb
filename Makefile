@@ -1,6 +1,7 @@
 PREFIX = /usr/local
 
-drb: drb.sh drb.awk drb.tsv
+drb: drb.sh drb.awk drb.tsv.part-aa drb.tsv.part-ab drb.tsv.part-ac drb.tsv.part-ad drb.tsv.part-ae drb.tsv.part-af drb.tsv.part-ag drb.tsv.part-ah
+	cat drb.tsv.part-* > drb.tsv
 	cat drb.sh > $@
 	echo 'exit 0' >> $@
 	echo '#EOF' >> $@
@@ -11,7 +12,7 @@ test: drb.sh
 	shellcheck -s sh drb.sh
 
 clean:
-	rm -f drb
+	rm -f drb drb.tsv
 
 install: drb
 	mkdir -p $(DESTDIR)$(PREFIX)/bin

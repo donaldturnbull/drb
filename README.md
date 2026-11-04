@@ -59,6 +59,10 @@ drb can be built by cloning the repository and then running make:
     cd douay-rheims
     sudo make install
 
+Note: the verse data is stored in eight parts
+(`drb.tsv.part-aa` through `drb.tsv.part-ah`) to keep each file
+small; `make` reassembles them into `drb.tsv` when building.
+
 ## License
 
 Public domain
