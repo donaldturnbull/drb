@@ -55,8 +55,8 @@ of the `kjv` terminal Bible program.
 
 drb can be built by cloning the repository and then running make:
 
-    git clone https://github.com/donaldturnbull/douay-rheims.git
-    cd douay-rheims
+    git clone https://github.com/donaldturnbull/drb.git
+    cd drb
     sudo make install
 
 Note: the verse data is stored in eight parts
