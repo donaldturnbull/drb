@@ -1,4 +1,4 @@
-# drb
+# drb - Douay-Rheims Bible on the Command Line
 
 Read the Douay-Rheims Bible from your terminal
 
